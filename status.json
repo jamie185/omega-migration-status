@@ -1,12 +1,12 @@
 ﻿{
     "schemaVersion":  1,
-    "updatedAt":  "2026-09-18T04:04:03Z",
-    "phase":  "Verifying transfer",
-    "summary":  "Copying has finished and aggregate destination verification is running.",
+    "updatedAt":  "2026-09-18T04:05:03Z",
+    "phase":  "Transfer error",
+    "summary":  "The transfer worker is preparing or paused. No unvalidated completion is claimed.",
     "websiteClaude":  {
-                          "copiedFiles":  466070,
+                          "copiedFiles":  471552,
                           "totalFiles":  547604,
-                          "copiedBytes":  27922837506,
+                          "copiedBytes":  30238778865,
                           "totalBytes":  53382491811
                       },
     "obsidian":  {
@@ -19,5 +19,5 @@
                          "macOmegaSsh":  "connected",
                          "verifiedAt":  "2026-09-18T03:00:00Z"
                      },
-    "error":  null
+    "error":  "The transfer worker reported an error. Detailed logs remain private."
 }
