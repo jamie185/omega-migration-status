@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Omega Migration Status</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1020;--card:#151c31;--muted:#9da9c4;--text:#f4f7ff;--accent:#73e0a9;--warn:#ffd479;--bad:#ff8f9b}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#182747,var(--bg) 58%);color:var(--text);font:16px/1.5 system-ui,sans-serif;min-height:100vh}.wrap{max-width:780px;margin:auto;padding:48px 20px}h1{font-size:clamp(2rem,7vw,4rem);line-height:1;margin:0 0 12px}.sub,.meta{color:var(--muted)}.state{display:inline-flex;gap:8px;align-items:center;margin:24px 0;padding:9px 14px;border-radius:99px;background:#22304e}.dot{width:10px;height:10px;border-radius:50%;background:var(--warn);box-shadow:0 0 14px var(--warn)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.card{background:color-mix(in srgb,var(--card) 92%,transparent);border:1px solid #2b3858;border-radius:18px;padding:20px}.label{color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}.big{font-size:1.6rem;font-weight:700;margin-top:6px}.bar{height:9px;background:#27334e;border-radius:9px;overflow:hidden;margin-top:14px}.fill{height:100%;width:0;background:linear-gradient(90deg,#65dca4,#7db4ff)}.notice{margin-top:18px;border-left:3px solid var(--warn);padding:10px 14px;background:#1c2336}.stale .dot{background:var(--bad);box-shadow:0 0 14px var(--bad)}footer{margin-top:28px;color:var(--muted);font-size:.85rem}
+  </style>
+</head>
+<body><main class="wrap">
+  <div class="label">Live public monitor</div><h1>Omega migration</h1>
+  <p class="sub">Sanitized aggregate progress for WebsiteClaude and Obsidian. No source paths, filenames, content, network details, or credentials are published.</p>
+  <div id="state" class="state"><span class="dot"></span><strong id="phase">Loading status…</strong></div>
+  <section class="grid">
+    <article class="card"><div class="label">WebsiteClaude</div><div id="wc" class="big">Awaiting validated metrics</div><div class="bar"><div id="wcb" class="fill"></div></div></article>
+    <article class="card"><div class="label">Obsidian</div><div id="ob" class="big">Awaiting validated metrics</div><div class="bar"><div id="obb" class="fill"></div></div></article>
+  </section>
+  <div id="notice" class="notice">Preparing a safe, resumable transfer worker. No copy completion is claimed.</div>
+  <footer>Last publisher heartbeat: <span id="heartbeat">unknown</span>. This page automatically marks a heartbeat stale after 10 minutes.</footer>
+</main><script>
+const fmt=n=>n==null?'Awaiting validated metrics':new Intl.NumberFormat().format(n);
+function renderItem(x,text,bar){if(x&&x.totalFiles!=null&&x.copiedFiles!=null){const p=x.totalFiles?Math.min(100,100*x.copiedFiles/x.totalFiles):0;document.getElementById(text).textContent=`${fmt(x.copiedFiles)} / ${fmt(x.totalFiles)} files (${p.toFixed(1)}%)`;document.getElementById(bar).style.width=p+'%'}else document.getElementById(text).textContent='Awaiting validated metrics'}
+fetch('status.json?'+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(s=>{const age=Date.now()-Date.parse(s.updatedAt);const stale=!Number.isFinite(age)||age>600000;document.getElementById('phase').textContent=stale?'Status stale — heartbeat overdue':s.phase;document.getElementById('heartbeat').textContent=s.updatedAt||'unknown';document.getElementById('notice').textContent=stale?'The independent publisher has not reported within 10 minutes. Progress shown may be outdated.':s.summary;document.getElementById('state').classList.toggle('stale',stale);renderItem(s.websiteClaude,'wc','wcb');renderItem(s.obsidian,'ob','obb')}).catch(()=>{document.getElementById('phase').textContent='Status unavailable';document.getElementById('state').classList.add('stale');document.getElementById('notice').textContent='The sanitized status feed could not be loaded.'});
+</script></body></html>
