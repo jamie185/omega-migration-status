@@ -1,12 +1,12 @@
 ﻿{
     "schemaVersion":  1,
-    "updatedAt":  "2026-09-18T04:02:03Z",
+    "updatedAt":  "2026-09-18T04:03:04Z",
     "phase":  "Verifying transfer",
     "summary":  "Copying has finished and aggregate destination verification is running.",
     "websiteClaude":  {
-                          "copiedFiles":  411251,
+                          "copiedFiles":  437558,
                           "totalFiles":  547604,
-                          "copiedBytes":  22622339623,
+                          "copiedBytes":  26033541778,
                           "totalBytes":  53382491811
                       },
     "obsidian":  {
