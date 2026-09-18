@@ -1,12 +1,12 @@
 ﻿{
     "schemaVersion":  1,
-    "updatedAt":  "2026-09-18T03:40:04Z",
-    "phase":  "Preparing safe transfer",
-    "summary":  "The transfer worker is preparing or paused. No unvalidated completion is claimed.",
+    "updatedAt":  "2026-09-18T03:41:05Z",
+    "phase":  "Transfer in progress",
+    "summary":  "The resumable transfer is active. Counts include only worker-validated progress.",
     "websiteClaude":  {
-                          "copiedFiles":  9195,
+                          "copiedFiles":  14390,
                           "totalFiles":  547604,
-                          "copiedBytes":  589465487,
+                          "copiedBytes":  933541089,
                           "totalBytes":  53382491811
                       },
     "obsidian":  {
