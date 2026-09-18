@@ -1,19 +1,19 @@
-{
-  "schemaVersion": 1,
-  "updatedAt": "2026-09-18T02:52:46Z",
-  "phase": "Preparing safe transfer",
-  "summary": "The manifest-driven transfer worker is being prepared. No file-copy progress has been validated yet.",
-  "websiteClaude": {
-    "copiedFiles": null,
-    "totalFiles": null,
-    "copiedBytes": null,
-    "totalBytes": null
-  },
-  "obsidian": {
-    "copiedFiles": null,
-    "totalFiles": null,
-    "copiedBytes": null,
-    "totalBytes": null
-  },
-  "error": "A connectivity probe failed; the worker is switching to a safer manifest-driven method."
+﻿{
+    "schemaVersion":  1,
+    "updatedAt":  "2026-09-18T02:57:29Z",
+    "phase":  "Preparing safe transfer",
+    "summary":  "The manifest-driven transfer worker is being prepared. No file-copy progress has been validated yet.",
+    "websiteClaude":  {
+                          "copiedFiles":  null,
+                          "totalFiles":  null,
+                          "copiedBytes":  null,
+                          "totalBytes":  null
+                      },
+    "obsidian":  {
+                     "copiedFiles":  null,
+                     "totalFiles":  null,
+                     "copiedBytes":  null,
+                     "totalBytes":  null
+                 },
+    "error":  null
 }
