@@ -1,7 +1,7 @@
 ﻿{
     "schemaVersion":  1,
-    "updatedAt":  "2026-09-18T03:31:05Z",
-    "phase":  "Transfer paused",
+    "updatedAt":  "2026-09-18T03:32:04Z",
+    "phase":  "Preparing safe transfer",
     "summary":  "The transfer worker is preparing or paused. No unvalidated completion is claimed.",
     "websiteClaude":  {
                           "copiedFiles":  null,
@@ -19,5 +19,5 @@
                          "macOmegaSsh":  "connected",
                          "verifiedAt":  "2026-09-18T03:00:00Z"
                      },
-    "error":  "The transfer worker reported an error. Detailed logs remain private."
+    "error":  null
 }
