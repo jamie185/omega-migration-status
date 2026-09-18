@@ -1,6 +1,6 @@
 ﻿{
     "schemaVersion":  1,
-    "updatedAt":  "2026-09-18T02:58:01Z",
+    "updatedAt":  "2026-09-18T02:59:01Z",
     "phase":  "Preparing safe transfer",
     "summary":  "The manifest-driven transfer worker is being prepared. No file-copy progress has been validated yet.",
     "websiteClaude":  {
