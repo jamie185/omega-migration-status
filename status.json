@@ -1,23 +1,23 @@
-﻿{
-    "schemaVersion":  1,
-    "updatedAt":  "2026-09-18T04:18:03Z",
-    "phase":  "Verifying transfer",
-    "summary":  "Copying has finished and aggregate destination verification is running.",
-    "websiteClaude":  {
-                          "copiedFiles":  520003,
-                          "totalFiles":  520003,
-                          "copiedBytes":  50963194571,
-                          "totalBytes":  50962936181
-                      },
-    "obsidian":  {
-                     "copiedFiles":  374675,
-                     "totalFiles":  374675,
-                     "copiedBytes":  23473854951,
-                     "totalBytes":  23473854951
-                 },
-    "connectivity":  {
-                         "macOmegaSsh":  "connected",
-                         "verifiedAt":  "2026-09-18T03:00:00Z"
-                     },
-    "error":  null
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-18T04:24:16Z",
+  "phase": "Transfer complete",
+  "summary": "The worker reports completion; aggregate destination verification has passed.",
+  "websiteClaude": {
+    "copiedFiles": 520003,
+    "totalFiles": 520003,
+    "copiedBytes": 50963194571,
+    "totalBytes": 50963194571
+  },
+  "obsidian": {
+    "copiedFiles": 374675,
+    "totalFiles": 374675,
+    "copiedBytes": 23473854951,
+    "totalBytes": 23473854951
+  },
+  "connectivity": {
+    "macOmegaSsh": "connected",
+    "verifiedAt": "2026-09-18T03:00:00Z"
+  },
+  "error": null
 }
