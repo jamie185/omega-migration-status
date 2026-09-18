@@ -1,18 +1,18 @@
 ﻿{
     "schemaVersion":  1,
-    "updatedAt":  "2026-09-18T04:05:03Z",
+    "updatedAt":  "2026-09-18T04:06:03Z",
     "phase":  "Transfer error",
     "summary":  "The transfer worker is preparing or paused. No unvalidated completion is claimed.",
     "websiteClaude":  {
-                          "copiedFiles":  471552,
-                          "totalFiles":  547604,
-                          "copiedBytes":  30238778865,
-                          "totalBytes":  53382491811
+                          "copiedFiles":  0,
+                          "totalFiles":  520003,
+                          "copiedBytes":  0,
+                          "totalBytes":  50962936181
                       },
     "obsidian":  {
-                     "copiedFiles":  374675,
+                     "copiedFiles":  0,
                      "totalFiles":  374675,
-                     "copiedBytes":  23473854951,
+                     "copiedBytes":  0,
                      "totalBytes":  23473854951
                  },
     "connectivity":  {
