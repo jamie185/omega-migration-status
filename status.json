@@ -1,6 +1,6 @@
 ﻿{
     "schemaVersion":  1,
-    "updatedAt":  "2026-09-18T04:00:03Z",
+    "updatedAt":  "2026-09-18T04:01:04Z",
     "phase":  "Transfer in progress",
     "summary":  "The resumable transfer is active. Counts include only worker-validated progress.",
     "websiteClaude":  {
@@ -10,9 +10,9 @@
                           "totalBytes":  53382491811
                       },
     "obsidian":  {
-                     "copiedFiles":  353884,
+                     "copiedFiles":  374053,
                      "totalFiles":  374675,
-                     "copiedBytes":  17591249373,
+                     "copiedBytes":  18048464062,
                      "totalBytes":  23473854951
                  },
     "connectivity":  {
