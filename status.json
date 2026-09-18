@@ -1,19 +1,19 @@
 ﻿{
     "schemaVersion":  1,
-    "updatedAt":  "2026-09-18T03:35:05Z",
+    "updatedAt":  "2026-09-18T03:36:04Z",
     "phase":  "Preparing safe transfer",
     "summary":  "The transfer worker is preparing or paused. No unvalidated completion is claimed.",
     "websiteClaude":  {
-                          "copiedFiles":  null,
-                          "totalFiles":  null,
-                          "copiedBytes":  null,
-                          "totalBytes":  null
+                          "copiedFiles":  0,
+                          "totalFiles":  555470,
+                          "copiedBytes":  0,
+                          "totalBytes":  53996225412
                       },
     "obsidian":  {
-                     "copiedFiles":  null,
-                     "totalFiles":  null,
-                     "copiedBytes":  null,
-                     "totalBytes":  null
+                     "copiedFiles":  0,
+                     "totalFiles":  374675,
+                     "copiedBytes":  0,
+                     "totalBytes":  23473854951
                  },
     "connectivity":  {
                          "macOmegaSsh":  "connected",
